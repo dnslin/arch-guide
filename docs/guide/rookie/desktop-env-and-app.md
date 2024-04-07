@@ -201,8 +201,8 @@ pacman -S plasma-meta konsole dolphin # plasma-meta 元软件包、konsole 终�
 
 2. kde 默认安装的是[xorg](https://wiki.archlinuxcn.org/zh-hans/Xorg)，如果想使用[wayland](https://wiki.archlinuxcn.org/wiki/Wayland)的话安装以下包：
 
-```
-pacman -S  plasma-wayland-session xdg-desktop-portal
+```bash
+pacman -S  plasma-workspace xdg-desktop-portal
 # N卡用户需要额外安装egl-wayland,xdg-desktop-portal包是为了如obs此类工具录制屏幕使用
 # xdg-desktop-portal包组提供了不同环境下使用的软件包
 # 例如kde用户可选择xdg-desktop-portal-kde包
@@ -271,7 +271,7 @@ sudo pacman -S adobe-source-han-serif-cn-fonts wqy-zenhei # 安装几个开源�
 sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra # 安装谷歌开源字体及表情
 sudo pacman -S firefox chromium # 安装常用的火狐、chromium 浏览器
 sudo pacman -S ark # 压缩软件。在 dolphin 中可用右键解压压缩包
-sudo pacman -S packagekit-qt5 packagekit appstream-qt appstream # 确保 Discover（软件中心）可用，需重启
+sudo pacman -S packagekit-qt6 packagekit appstream-qt appstream # 确保 Discover（软件中心）可用，需重启
 sudo pacman -S gwenview # 图片查看器
 sudo pacman -S steam # 游戏商店。稍后看完显卡驱动章节再使用
 ```
@@ -375,7 +375,7 @@ sudo pacman -S fcitx5-material-color # 输入法主题
 2. 此外，我们还需要设置环境变量。通过 `vim` 编辑文件 `/etc/environment`：
 
 ```bash
-sudo vim /etc/environment
+sudoedit /etc/environment
 ```
 
 3. 在文件中加入以下内容并保存退出：

@@ -39,7 +39,7 @@ sidebarDepth: 2
 ::: code-group
 
 ```sh [cn (cn)]
-yay -S wps-office-cn ttf-wps-fonts libtiff5
+yay -S wps-office-cn wps-office-mui-zh-cn ttf-wps-fonts
 ```
 
 ```sh [cn]
@@ -57,6 +57,14 @@ sudo pacman -S wps-office aur/ttf-wps-fonts aur/libtiff5
 :::
 
 ![wps-office](../../assets/app/common/office/wps-office.png)
+
+::: tip ℹ️ 提示
+
+WPS可能会出现部分中文字体过粗的情况。文本看起来特别粗，标题、粗体文本几乎不可用。
+
+可以通过降级`freetype2`至2.13.0版本解决
+
+:::
 
 > 🔗 相关链接：
 >

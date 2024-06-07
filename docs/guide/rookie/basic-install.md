@@ -50,13 +50,32 @@ systemctl status reflector.service
 
 ::: tip ℹ️ 提示
 
-在命令行中你可以使用如下命令清屏：
+- 在命令行中你可以使用如下命令清屏：
 
-```zsh
-clear
-```
+  ```zsh
+  clear
+  ```
 
-同时，你可以使用 `Tab` 键在输入命令的时候对命令、参数或文件路径进行自动补全，提高效率的同时降低输入错误的风险。
+  同时，你可以使用 `Tab` 键在输入命令的时候对命令、参数或文件路径进行自动补全，提高效率的同时降低输入错误的风险。
+
+- `Tab` 无法补全时，有些设备的蜂鸣器会发出“哔——”声，可以使用如下命令禁用蜂鸣器内核模块：
+
+  ```zsh
+  rmmod pcspkr
+  ```
+- 要永久禁用蜂鸣器内核模块, 请创建并编辑 `/etc/modprobe.d/blacklist.conf`
+
+  ```zsh
+  sudoedit /etc/modprobe.d/blacklist.conf
+  ```
+
+  加入以下内容
+
+  ```
+  blacklist pcspkr
+  ```
+
+  这样下次启动就不会加载 pcspkr 模块了
 
 :::
 

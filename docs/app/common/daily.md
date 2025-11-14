@@ -160,19 +160,17 @@ yay -S microsoft-edge-dev-bin
 
 Google Chrome 是由 Google 开发的免费网页浏览器。Chrome 相应的开放源代码计划名为 Chromium，而 Google Chrome 本身是专有软件，未开放全部源代码。
 
-安装 [Google Chrome](https://aur.archlinux.org/packages/google-chrome/)<sup>EULA / cn / aur</sup>：
+::: tip ℹ️ 提示
 
-::: code-group
-
-```sh [cn]
-sudo pacman -S google-chrome
-```
-
-```sh [aur]
-yay -S google-chrome
-```
+ArchLinuxcn 中已经移除了 Google Chrome。
 
 :::
+
+安装 [Google Chrome](https://aur.archlinux.org/packages/google-chrome/)<sup>EULA / aur</sup>：
+
+```sh
+yay -S google-chrome
+```
 
 ![chrome](../../assets/app/common/daily/chrome.png)
 
@@ -525,6 +523,18 @@ yay -S xnviewmp
 ![xnviewmp-1](../../assets/app/common/daily/xnviewmp-1.png)
 
 ![xnviewmp-2](../../assets/app/common/daily/xnviewmp-2.png)
+
+### qimgv
+
+qimgv 是一个轻量级的跨平台图像查看器，基于 Qt 开发。有可选的视频支持（使用mpv）。
+
+安装 [`qimgv`](https://aur.archlinux.org/packages/qimgv)<sup>aur</sup>:
+
+```sh
+yay -S qimgv
+```
+
+![qimgv](../../assets/app/common/daily/qimgv.png)
 
 ## 🧰 实用工具
 

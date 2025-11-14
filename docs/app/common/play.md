@@ -208,6 +208,8 @@ Lutris 支持超过 20 个模拟器并且提供了从七十年代到现在的大
    yay -S hmcl-bin
    ```
 
+   :::::
+
 ​ 使用[hmcl-bin](https://aur.archlinux.org/packages/hmcl-bin)<sup>aur</sup>在让我们获取良好的官方支持以外，还能够让其自身使用系统的 java-openjfx 包，符合「低耦合、高内聚」的软件工程原则。
 
 2. 打开 `Minecraft Launcher` > 根据提示登录帐号并下载主程序后即可畅玩：
@@ -320,12 +322,12 @@ Lutris 支持超过 20 个模拟器并且提供了从七十年代到现在的大
 
 类似 Windows 下的 [微星 Afterburner](https://cn.msi.com/Landing/afterburner/graphics-cards)<sup>EULA</sup> 性能显示的部分，Linux 上也有一款同类软件可以监控游戏中的电脑性能（CPU 占用率、帧数等等），名为 [MangoHud](https://github.com/flightlessmango/MangoHud)。
 
-1. 安装 [MangoHud](https://aur.archlinux.org/pkgbase/mangohud/)<sup>aur</sup>：
+1. 安装 [MangoHud](https://aur.archlinux.org/pkgbase/mangohud/)<sup>extra / aur</sup>：
 
    ::: code-group
 
-   ```sh [aur]
-   yay -S mangohud lib32-mangohud
+   ```sh [extra]
+   sudo pacman -S mangohud lib32-mangohud
    ```
 
    ```sh [aur (git)]
